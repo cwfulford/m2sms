@@ -5,7 +5,6 @@
 </p>
 <h2 id="heading2">SYNOPSIS</h2>
 <p class="indent">
-<b>m2sms</b> [<b>-c </b><i>&lt;config_file&gt;</i>] [<b>-d</b>]
 [<b>-v</b>]  <i>&lt;start_time&gt; &lt;event_description&gt;</i> | [<b>-V</b>]
 </p>
 <h2 id="heading3">AVAILABILITY</h2>
@@ -32,9 +31,6 @@ to the calendar user but could also be used from the command line.
 </p>
 <p class="indent">
 <b>-c</b>
-Use the specified configuration file in preference to the default
-<i>"/usr/local/etc/m2sms.cf"</i>. If no configuration file is found the 
-script will attempt to soldier on with the information it has from the 
 command line.
 </p>
 <p class="indent">
@@ -49,7 +45,6 @@ operates silently unless show stopping problems are detected. In
 <i>verbose</i>
 mode 
 <b>m2sms</b>
-reports on each significant action.
 </p>
 <p class="indent">
 <b>-V</b>
@@ -59,10 +54,8 @@ reports the release details and terminates.
 <h2 id="heading6">EXAMPLES</h2>
 <p class="indent">
 <div class="cmdline">
-.nf
 <pre>
 m2sms  &lt;start-time&gt; &lt;event&gt; &lt;recipient&gt;
-.fi
 </pre>
 </div>
 </p>
