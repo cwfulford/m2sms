@@ -38,6 +38,7 @@ operates silently unless show stopping problems are detected. In
 mode 
 .B m2sms
 reports on each significant action.
+.TP 5
 .B -V
 .B m2sms 
 reports the release details and terminates.
