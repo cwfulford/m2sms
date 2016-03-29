@@ -25,7 +25,9 @@ Linux and Mac OS X.
 uses the event and date/time parameters received on the command line to 
 create a subject line to send to the sms gateway. 
 A brief message is also appended to prevent problems which may be experienced
-if \fBmailx\fR receives a null message.
+if 
+.B mailx
+receives a null message.
 .LP
 .B m2sms
 is designed to be called by the \fBorage\fR calendar programme to text alerts
@@ -38,7 +40,7 @@ Use the specified configuration file in preference to the default
 script will attempt to soldier on with the information it has from the 
 command line.
 .TP 5
-\fB-d\fR
+.B -d
 Start in debug mode. The \fB-x\fR option is set within the shell.
 .TP
 .B -v
