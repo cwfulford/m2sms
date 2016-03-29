@@ -50,7 +50,13 @@ m2sms  <start-time> <event> <recipient>
 .fi
 .ft R
 .LP
-In the \fBOrage\fR calendar the syntax for setting the \fIAlarm\fR is "/usr/local/m2sms.cf <&ST> <&T>".
+In the \fBOrage\fR calendar the syntax for setting the \fIAlarm\fR is
+.nf
+.ft CW
+"/usr/local/m2sms.cf <&ST> <&T>"
+.fi
+.ft R
+ .
 .SH BUGS
 The script is quite crude having little or no error checking. The consequences
 of unexpected input are untested. 
