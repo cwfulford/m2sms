@@ -4,8 +4,7 @@
 - creates and sends  message to a mail to sms text gateway.
 .SH SYNOPSIS
 \fBm2sms\fR [\fB-c \fI<config_file>\fR] [\fB-d\fR]
-[\fB-v\fR]  <\fIstart-time\fR><\fIevent-description\fR>|\fB-V\fR]
-.br
+[\fB-v\fR]  \fI<start_time> <event_description>\fR | [\fB-V\fR]
 .SH AVAILABILITY
 .B m2sms
 is a Bourne shell script which should work equally well on all versions of UNIX,
