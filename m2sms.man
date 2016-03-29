@@ -52,7 +52,7 @@ reports the release details and terminates.
 .LP
 The appropriate \fBSMS\fR mail gateway for the current \fIuser\fR is found
 in \fIm2sms.cf\fR and  \fBmailx\fR is employed to send a message with the
-subject line "\fI<start_time>\fR \fI<event_description>\fR .
+subject line "\fI<start_time>\fR \fI<event_description>\fR".
 .LP
 In the \fBOrage\fR calendar the syntax for setting the \fIAlarm\fR is
 .nf
