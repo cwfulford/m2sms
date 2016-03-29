@@ -37,8 +37,9 @@ to the calendar user but could also be used from the command line.
 .SH OPTIONS
 .TP 5
 .B -c
-Use the specified configuration file in preference to the default
-\fI"/usr/local/etc/m2sms.cf"\fR. If no configuration file is found the 
+Use the specified configuration file in preference to the default 
+.I /usr/local/etc/m2sms.cf.
+If no configuration file is found the 
 script will attempt to soldier on with the information it has from the 
 command line.
 .TP 5
