@@ -44,8 +44,10 @@ reports on each significant action.
 reports the release details and terminates.
 .SH EXAMPLES
 .IP
+.nf
 .ft CW
 m2sms  <start-time> <event> <recipient>
+.fi
 .ft R
 .LP
 In the \fBOrage\fR calendar the syntax for setting the \fIAlarm\fR is "/usr/local/m2sms.cf <&ST> <&T>".
