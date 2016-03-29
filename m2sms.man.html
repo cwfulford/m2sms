@@ -5,7 +5,19 @@
 </p>
 <h2 id="heading2">SYNOPSIS</h2>
 <p class="indent">
-[<b>-v</b>]  <i>&lt;start_time&gt; &lt;event_description&gt;</i> | [<b>-V</b>]
+<b>m2sms</b>
+[
+<b>-c</b>
+<i>&lt;config_file&gt;</i>
+] [
+.B-d
+] [
+<b>-v</b>
+]
+<i>&lt;start_time&gt; &lt;event_description&gt;</i>
+| [
+.B-V
+]
 </p>
 <h2 id="heading3">AVAILABILITY</h2>
 <p class="indent">
@@ -19,11 +31,11 @@ Linux and Mac OS X.
 uses the event and date/time parameters received on the command line to 
 create a subject line to send to the sms gateway. 
 A brief message is also appended to prevent problems which may be experienced
-if <b>mailx</b> receives a null message.
+if <b>mailx\fR receives a null message.
 </p>
 <p class="indent">
 <b>m2sms</b>
-is designed to be called by the <b>orage</b> calendar programme to text alerts
+is designed to be called by the <b>orage\fR calendar programme to text alerts
 to the calendar user but could also be used from the command line.
 </p>
 <h2 id="heading5">OPTIONS</h2>
@@ -31,11 +43,14 @@ to the calendar user but could also be used from the command line.
 </p>
 <p class="indent">
 <b>-c</b>
+Use the specified configuration file in preference to the default
+<i>"/usr/local/etc/m2sms.cf"\fR. If no configuration file is found the 
+script will attempt to soldier on with the information it has from the 
 command line.
 </p>
 <p class="indent">
-<b>-d</b>
-Start in debug mode. The <b>-x</b> option is set within the shell.
+<b>-d\fR
+Start in debug mode. The <b>-x\fR option is set within the shell.
 </p>
 <p class="indent">
 <b>-v</b>
@@ -45,6 +60,7 @@ operates silently unless show stopping problems are detected. In
 <i>verbose</i>
 mode 
 <b>m2sms</b>
+reports on each significant action.
 </p>
 <p class="indent">
 <b>-V</b>
@@ -53,19 +69,20 @@ reports the release details and terminates.
 </p>
 <h2 id="heading6">EXAMPLES</h2>
 <p class="indent">
-<div class="cmdline">
+</div>
+<div class="indent">
 <pre>
 		m2sms  &lt;start_time&gt; &lt;event_description&gt; 
 </pre>
 </div>
 </p>
 <p class="indent">
-The appropriate <b>SMS</b> mail gateway for the current <i>user</i> is found
-in <i>m2sms.cf</i> and  <b>mailx</b> is employed to send a message with the
-subject line "<i>&lt;start_time&gt;</i> <i>&lt;event_description&gt;</i>".
+The appropriate <b>SMS\fR mail gateway for the current <i>user\fR is found
+in <i>m2sms.cf\fR and  <b>mailx\fR is employed to send a message with the
+subject line "<i>&lt;start_time&gt;\fR <i>&lt;event_description&gt;\fR".
 </p>
 <p class="indent">
-In the <b>Orage</b> calendar the syntax for setting the <i>Alarm</i> is
+In the <b>Orage\fR calendar the syntax for setting the <i>Alarm\fR is
 <pre>
 		/usr/local/m2sms.cf &lt;&ST&gt; &lt;&T&gt;
 </pre>
