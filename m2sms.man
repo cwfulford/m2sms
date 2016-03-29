@@ -46,14 +46,14 @@ reports the release details and terminates.
 .IP
 .nf
 .ft CW
-m2sms  <start-time> <event> <recipient>
+	m2sms  <start-time> <event> <recipient>
 .fi
 .ft R
 .LP
 In the \fBOrage\fR calendar the syntax for setting the \fIAlarm\fR is
 .nf
 .ft CW
-"/usr/local/m2sms.cf <&ST> <&T>"
+	/usr/local/m2sms.cf <&ST> <&T>
 .fi
 .ft R
  .
