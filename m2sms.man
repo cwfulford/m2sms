@@ -91,7 +91,6 @@ is
 		/usr/local/m2sms.cf <&ST> <&T>
 .fi
 .ft R
- .
 .SH BUGS
 The script is quite crude having little or no error checking. The consequences
 of unexpected input are untested. 
