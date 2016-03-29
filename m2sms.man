@@ -61,7 +61,6 @@ reports on each significant action.
 .B m2sms 
 reports the release details and terminates.
 .SH EXAMPLES
-.IP
 .nf
 .ft CW
 		m2sms  <start_time> <event_description> 
