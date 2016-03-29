@@ -1,0 +1,59 @@
+.TH M2SMS 8l "29th March r1.1
+.SH NAME
+.B m2sms
+- creates and sends  message to a mail to sms text gateway.
+.SH SYNOPSIS
+\fBm2sms\fR [\fB-c \fI<config_file>\fR] [\fB-d\fR]
+[\fB-v\fR]  <\fIstart-time\fR><\fIevent-description\fR>|\fB-V\fR]
+.br
+.SH AVAILABILITY
+.B m2sms
+is a Bourne shell script which should work equally well on all versions of UNIX,
+Linux and Mac OS X.
+.SH DESCRIPTION
+.B m2sms
+uses the event and date/time parameters received on the command line to 
+create a subject line to send to the sms gateway. 
+A brief message is also appended to prevent problems which may be experienced
+if \fImailx\fR receives a null message.
+.LP
+.B m2sms
+is designed to be called by the \fBorage\fR calendar programme to text alerts
+to the calendar user but could also be used from the command line.
+.SH OPTIONS
+.TP 5
+.B -c
+Use the specified configuration file in preference to the default
+\fI"/usr/local/etc/m2sms.cf"\fR. If no configuration file is found the 
+script will attempt to soldier on with the information it has from the 
+command line.
+.TP 5
+\fB-d\fR
+Start in debug mode. The \fB-x\fR option is set within the shell.
+.TP
+.B -v
+Set verbose mode. Ordinarily 
+.B m2sms
+operates silently unless show stopping problems are detected. In 
+.I verbose
+mode 
+.B m2sms
+reports on each significant action.
+.B -V
+.B m2sms 
+reports the release details and terminates.
+.SH EXAMPLES
+.IP
+.ft CW
+m2sms  <start-time> <event> <recipient>
+.ft R
+.LP
+In the \fBOrage\fR calendar the syntax for setting the \fIAlarm\fR is "/usr/local/m2sms.cf <&ST> <&T>".
+.SH BUGS
+The script is quite crude having little or no error checking. The consequences
+of unexpected input are untested. 
+.SH SEE ALSO
+.SH AUTHOR
+Clifford W Fulford, City Linux. Contact fulford@fulford.net or +44 (0)709 229 5385.
+.SH HISTORY
+
