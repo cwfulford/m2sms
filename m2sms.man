@@ -30,7 +30,9 @@ if
 receives a null message.
 .LP
 .B m2sms
-is designed to be called by the \fBorage\fR calendar programme to text alerts
+is designed to be called by the 
+.B orage
+calendar programme to text alerts
 to the calendar user but could also be used from the command line.
 .SH OPTIONS
 .TP 5
@@ -41,7 +43,9 @@ script will attempt to soldier on with the information it has from the
 command line.
 .TP 5
 .B -d
-Start in debug mode. The \fB-x\fR option is set within the shell.
+Start in debug mode. The 
+.B -x
+option is set within the shell.
 .TP
 .B -v
 Set verbose mode. Ordinarily 
