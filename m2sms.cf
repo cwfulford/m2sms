@@ -1,6 +1,15 @@
 <pre>
 
-fuford:
+# $Id: m2sms.cf,v 1.3 2016/03/29 15:15:25 fulford Exp fulford $
+# $Source: /src/merlin/usr/local/etc/RCS/m2sms.cf,v $
+# $Revision: 1.3 $
+# Author C W Fulford.
+# Copyright 2016 (c) C W Fulford.
+# Licensed for public use under the LGPL, .
+# For assistance contact fulford@fulford.net 0793 572 8612
+########################################################################
+
+fulford:
 	smsgw=07935728612@txtlocal.co.uk
 ######################################################################
 # This program is free software: you can redistribute it and or      #
