@@ -1,11 +1,11 @@
 <h2 id="heading1">NAME</h2>
 <p class="indent">
-<b>m2sms</b>
+<b><a href="./scripts.php?script=m2sms">m2sms</a></b>
 - creates and sends  message to a mail to sms text gateway.
 </p>
 <h2 id="heading2">SYNOPSIS</h2>
 <p class="indent">
-<b>m2sms</b>
+<b><a href="./scripts.php?script=m2sms">m2sms</a></b>
 [
 <b>-c</b>
 <i>&lt;config_file&gt;</i>
@@ -21,13 +21,13 @@
 </p>
 <h2 id="heading3">AVAILABILITY</h2>
 <p class="indent">
-<b>m2sms</b>
+<b><a href="./scripts.php?script=m2sms">m2sms</a></b>
 is a Bourne shell script which should work equally well on all versions of UNIX,
 Linux and Mac OS X.
 </p>
 <h2 id="heading4">DESCRIPTION</h2>
 <p class="indent">
-<b>m2sms</b>
+<b><a href="./scripts.php?script=m2sms">m2sms</a></b>
 uses the event and date/time parameters received on the command line to 
 create a subject line to send to the sms gateway. 
 A brief message is also appended to prevent problems which may be experienced
@@ -36,7 +36,7 @@ if
 receives a null message.
 </p>
 <p class="indent">
-<b>m2sms</b>
+<b><a href="./scripts.php?script=m2sms">m2sms</a></b>
 is designed to be called by the 
 <b>orage</b>
 calendar programme to text alerts
@@ -46,39 +46,41 @@ to the calendar user but could also be used from the command line.
 <p class="indent">
 </p>
 <p class="indent">
-<b>-c</b>
+<b>-c</b>&nbsp;&nbsp;&nbsp;
 Use the specified configuration file in preference to the default 
-<i>/usr/local/etc/m2sms.cf.</i>
+<i>/usr/local/etc/<a href="./scripts.php?script=m2sms.cf">m2sms.cf</a>.</i>
 If no configuration file is found the 
 script will attempt to soldier on with the information it has from the 
 command line.
 </p>
 <p class="indent">
-<b>-d</b>
+<b>-d</b>&nbsp;&nbsp;&nbsp;
 Start in debug mode. The 
-<b>-x</b>
+<b>-x</b>&nbsp;&nbsp;&nbsp;
 option is set within the shell.
 </p>
 <p class="indent">
-<b>-v</b>
+<b>-v</b>&nbsp;&nbsp;&nbsp;
 Set verbose mode. Ordinarily 
-<b>m2sms</b>
+<b><a href="./scripts.php?script=m2sms">m2sms</a></b>
 operates silently unless show stopping problems are detected. In 
 <i>verbose</i>
 mode 
-<b>m2sms</b>
+<b><a href="./scripts.php?script=m2sms">m2sms</a></b>
 reports on each significant action.
 </p>
 <p class="indent">
-<b>-V</b>
-<b>m2sms </b>
+<b>-V</b>&nbsp;&nbsp;&nbsp;
+<b><a href="./scripts.php?script=m2sms">m2sms</a> </b>
 reports the release details and terminates.
 </p>
 <h2 id="heading6">EXAMPLES</h2>
 <p class="indent">
+</p><div class="cmdline">
 <pre>
 		m2sms  &lt;start_time&gt; &lt;event_description&gt; 
-</pre>
+</pre></div>
+<p class="indent">
 </p>
 <p class="indent">
 The appropriate 
@@ -87,7 +89,7 @@ mail gateway for the current
 <i>user</i>
 is found
 in 
-<i>m2sms.cf</i>
+<i><a href="./scripts.php?script=m2sms.cf">m2sms.cf</a></i>
 and
 <b>mailx</b>
 is employed to send a message with the
@@ -101,9 +103,11 @@ In the
 calendar the syntax for setting the 
 <i>Alarm</i>
 is
+</p><div class="cmdline">
 <pre>
-		/usr/local/m2sms.cf &lt;&ST&gt; &lt;&T&gt;
-</pre>
+		/usr/local/<a href="./scripts.php?script=m2sms.cf">m2sms.cf</a> &lt;&ST&gt; &lt;&T&gt;
+</pre></div>
+<p class="indent">
 </p>
 <h2 id="heading8">BUGS</h2>
 <p class="indent">
@@ -116,7 +120,6 @@ of unexpected input are untested.
 <h2 id="heading10">AUTHOR</h2>
 <p class="indent">
 Clifford W Fulford, City Linux. Contact fulford@fulford.net or +44 (0)709 229 5385.
-</p>
-<h2 id="heading11">HISTORY</h2>
-<p class="indent">
 
+</p>
+	
