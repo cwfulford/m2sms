@@ -63,7 +63,7 @@ reports the release details and terminates.
 .SH EXAMPLES
 .nf
 .ft CW
-		m2sms  <start_time> <event_description> 
+	m2sms  <start_time> <event_description> 
 .fi
 .ft R
 .LP
@@ -88,7 +88,7 @@ calendar the syntax for setting the
 is
 .nf
 .ft CW
-		/usr/local/m2sms.cf <&ST> <&T>
+	/usr/local/m2sms.cf <&ST> <&T>
 .fi
 .ft R
 .SH BUGS
