@@ -1,4 +1,4 @@
-.TH M2SMS 8l "29th March r1.3
+.TH M2SMS 8l "29th March r1.4
 .SH NAME
 .B m2sms
 - creates and sends  message to a mail to sms text gateway.
